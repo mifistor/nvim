@@ -8,7 +8,7 @@ set shiftwidth=4                "setting tab to 4 columns
 set softtabstop=4               "setting tab to 4 columns
 set showmatch                   "display matching bracket or parenthesis
 set hlsearch incsearch          "highlight all pervious search pattern with incsearch
-set mouse=                      "disabled mouse support in visual mode
+set mouse=a                     "enabled mouse support in visual mode
 set clipboard+=unnamed          "enable shared copy/paste buffer
 
 highlight ColorColumn ctermbg=9 "display ugly bright red bar at color column number
@@ -41,3 +41,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Or build from source code by using yarn: https://yarnpkg.com
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tomasr/molokai'
+
