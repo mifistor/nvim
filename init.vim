@@ -36,15 +36,13 @@ nmap ++ <plug>NERDCommenterToggl
 autocmd FileType python nnoremap <buffer> <F5> :w<cr>:exec '!clear'<cr>:exec '!python3' shellescape(expand('%:p'), 1)<cr>
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
-" Use release branch (recommended)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-" Or build from source code by using yarn: https://yarnpkg.com
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+call plug#begin()
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tomasr/molokai'
+
+call plug#end()
 
