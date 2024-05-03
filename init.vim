@@ -52,3 +52,6 @@ Plug 'skywind3000/vim-terminal-help'
 
 call plug#end()
 
+# Comment and uncomment command
+vmap cc :norm i#<CR>
+vmap uc :norm ^x<CR>
