@@ -49,9 +49,12 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tomasr/molokai'
 Plug 'skywind3000/vim-terminal-help'
-
 call plug#end()
 
 " Comment and uncomment command
 vmap cc :norm i#<CR>
 vmap uc :norm ^x<CR>
+
+" Open file under cursor in a new tab
+nnoremap gf <C-W>gf
+vnoremap gf <C-W>gf
